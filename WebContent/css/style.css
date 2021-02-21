@@ -164,3 +164,43 @@ pre {
 h3 {
     font-size: larger;
 }
+
+.followbutton {
+    background-color: #4da6ff;
+    color: #fff;
+    cursor: pointer;
+    border-style: none;
+    border-radius : 5%;
+}
+
+.unfollowbutton {
+    background-color: #0059b3;
+    color: #fff;
+    cursor: pointer;
+    border-style: none;
+    border-radius : 5%;
+}
+
+.goodbutton {
+    background-color: #ffa94d;
+    color: #fff;
+    cursor: pointer;
+    border-style: none;
+    border-radius : 5%;
+}
+
+.ungoodbutton{
+    background-color: #ec7600;
+    color: #fff;
+    cursor: pointer;
+    border-style: none;
+    border-radius : 5%;
+}
+.form_conf {
+    text-align: right;
+}
+.form_conf form {
+    display: inline-block;
+    margin: 0 10px;
+}
+
