@@ -7,9 +7,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Table(name = "goods")
+@NamedQueries({
+    @NamedQuery(name = "findIsGoodByUser", query="SELECT g from Good g WHERE g.user_id = :user_id AND g.report_id = :report_id"),
+    @NamedQuery(name = "getMyGoodCount", query = "SELECT COUNT(g) FROM Good AS g WHERE g.report_id = :report_id "),
+})
 @Entity
 public class Good {
     @Id
@@ -48,6 +54,7 @@ public class Good {
     public void setUser_id(Employee user_id) {
         this.user_id = user_id;
     }
+
 
 
 
